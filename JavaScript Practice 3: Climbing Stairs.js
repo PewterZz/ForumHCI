@@ -12,8 +12,7 @@ list[1] = cost[1];
 
 for (let i = 2; i < n; i++)
 {
-    list[i] = Math.min(list[i - 1],
-                     list[i - 2]) + cost[i];
+    list[i] = Math.min(list[i - 1],list[i - 2]) + cost[i];
 }
 
 return Math.min(list[n - 2],
