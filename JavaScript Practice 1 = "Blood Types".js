@@ -8,7 +8,11 @@ else if(bloodtype1 == "O-"){
   console.log('True, you can safely give your blood')
   alert('True, you can safely give your blood')
 }
-else if(bloodtype1 == "O+" || bloodtype2 == "O+" && bloodtype1.charAt(1) == "+" || bloodtype2.charAt(1) == "+"){
+else if(bloodtype1 == "O+" && bloodtype2.charAt(1) == "+"){
+  console.log('True, you can safely give your blood')
+  alert('True, you can safely give your blood')
+}
+else if(bloodtype2 == "O+" && bloodtype1.charAt(1) == "+"){
   console.log('True, you can safely give your blood')
   alert('True, you can safely give your blood')
 }
